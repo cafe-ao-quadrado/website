@@ -33,9 +33,10 @@ function App() {
           </p>
           <a
             href="#contact"
-            className="mt-10 px-4 py-2 rounded text-slate-50 bg-sky-700 font-bold text-center"
+            className="group inline-flex items-end mt-10 px-4 py-2 rounded text-slate-50 bg-sky-700 hover:bg-sky-800 transition duration-500"
           >
-            Começar agora <ChevronsRight className="inline" />
+            <span className="font-bold text-lg">Começar agora</span>
+            <ChevronsRight className="w-6 h-6 ml-0 transition-[margin] group-hover:ml-2" />
           </a>
         </section>
         <section className="px-6 py-24 bg-gradient-to-b from-sky-500 to-sky-900 text-slate-50">
@@ -113,9 +114,10 @@ function App() {
               </p>
               <a
                 href="#contact"
-                className="bg-slate-50 rounded px-4 py-2 text-xl font-medium text-sky-900"
+                className="group inline-flex items-end bg-slate-50 rounded px-4 py-2 text-sky-900 hover:text-sky-950 transition"
               >
-                Começar <ChevronsRight className="inline" />
+                <span className="text-xl font-medium">Começar</span>
+                <ChevronsRight className="w-6 h-6 transition-[margin] ml-0 group-hover:ml-2" />
               </a>
             </div>
             <div className="flex-1 flex flex-col gap-8">
@@ -167,10 +169,10 @@ function App() {
             <a
               target="_blank"
               href="https://api.whatsapp.com/send?phone=5596981095088&text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20solu%C3%A7%C3%B5es%20web%20para%20minha%20empresa!"
-              className="px-4 py-2 rounded bg-sky-950 text-slate-50 font-bold text-xl"
+              className="group inline-flex items-end px-4 py-2 rounded bg-sky-950 text-slate-50"
             >
-              Iniciar conversa agora
-              <ChevronsRight className="ml-2 inline" />
+              <span className="font-bold text-xl">Iniciar conversa agora</span>
+              <ChevronsRight className="w-6 h-6 ml-0 group-hover:ml-2 transition-[margin]" />
             </a>
           </div>
         </section>
