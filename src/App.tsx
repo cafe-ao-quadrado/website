@@ -1,10 +1,12 @@
 import {
   ScanSearch,
-  Code,
-  Server,
   ChevronsRight,
   Users,
   Calendar,
+  Phone,
+  Mail,
+  Layers3,
+  MonitorCog,
 } from "lucide-react";
 
 import LogoSvg from "./assets/logo.svg";
@@ -17,8 +19,8 @@ function App() {
           <img src={LogoSvg} alt="Café ao quadrado logo" className="w-20" />
         </nav>
       </header>
-      <main className="flex-1 mt-16">
-        <section className="shadow px-4 bg-gradient-radial radial-x-[50%] radial-y-[-50%] from-sky-800 from-10% via-slate-900 via-80% via-slate-900 to-slate-900 py-44 flex flex-col items-center">
+      <main className="flex-1">
+        <section className="min-h-screen shadow px-4 bg-gradient-radial radial-x-[50%] radial-y-[-50%] from-sky-800 from-10% via-slate-900 via-80% via-slate-900 to-slate-900 py-44 flex flex-col items-center md:justify-center md:pt-56">
           <h1 className="text-white text-4xl font-bold text-center">
             <span className="font-normal">
               Liberte o potencial do seu negócio:
@@ -36,7 +38,7 @@ function App() {
             Começar agora <ChevronsRight className="inline" />
           </a>
         </section>
-        <section className="px-6 pt-24 pb-12 bg-gradient-to-b from-sky-500 to-sky-900 text-slate-50">
+        <section className="px-6 py-24 bg-gradient-to-b from-sky-500 to-sky-900 text-slate-50">
           <div className="w-full max-w-5xl mx-auto">
             <h1 className="text-4xl font-bold text-center mb-20">
               Nossos métodos
@@ -54,7 +56,7 @@ function App() {
                   Parceria colaborativa
                 </h3>
                 <p className="text-lg leading-8 text-sky-50">
-                  Acreditamos em trabalhar lado a lado com nossos clientes,
+                  Gostamos de trabalhar lado a lado com nossos clientes,
                   abraçando suas ideias e inspirações. Valorizamos sua
                   contribuição e o envolvemos ativamente durante todo o processo
                   de desenvolvimento.
@@ -72,10 +74,10 @@ function App() {
                   Prazos e estimativas transparentes
                 </h3>
                 <p className="text-lg leading-8 text-sky-50">
-                  Com nosso planejamento meticuloso e experiência em
-                  gerenciamento de projetos, você pode confiar em nós para
-                  entregar no prazo e dentro do orçamento. Sem surpresas, apenas
-                  execução confiável e transparente.
+                  Você pode confiar em nosso planejamento meticuloso e
+                  experiência em gerenciamento de projetos para entregar suas
+                  soluções no prazo e dentro do orçamento, sem surpresas no meio
+                  do projeto.
                 </p>
               </div>
               <div className="relative row-start-3 col-start-2">
@@ -99,8 +101,8 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="px-6 py-24 bg-sky-900 text-slate-50">
-          <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row gap-8">
+        <section className="px-6 bg-sky-900 text-slate-50">
+          <div className="border-t border-sky-950 py-24 w-full max-w-5xl mx-auto flex flex-col md:flex-row gap-8">
             <div className="w-full max-w-80 mb-4 md:mb-0">
               <h2 className="text-4xl font-bold mb-8">
                 Serviços disponíveis para sua empresa
@@ -130,7 +132,7 @@ function App() {
                 </p>
               </div>
               <div className="rounded-xl px-8 py-6 bg-sky-950">
-                <Code className="w-12 h-12 block text-sky-600" />
+                <MonitorCog className="w-10 h-10 mb-2 block text-sky-600" />
                 <h3 className="text-2xl font-bold mb-4 text-sky-600">
                   Desenvolvimento
                 </h3>
@@ -141,7 +143,7 @@ function App() {
                 </p>
               </div>
               <div className="rounded-xl px-8 py-6 bg-sky-950">
-                <Server className="w-10 h-10 block mb-1 text-sky-600" />
+                <Layers3 className="w-10 h-10 block mb-1 text-sky-600" />
                 <h3 className="text-2xl font-bold mb-4 text-sky-600">
                   Infraestrutura
                 </h3>
@@ -174,7 +176,15 @@ function App() {
         </section>
       </main>
       <footer className="w-full px-4 py-6 border-t border-slate-300 bg-slate-200">
-        <div className="max-w-5xl flex flex-col md:flex-row md:items-center gap-y-2 gap-x-4 text-slate-500 mx-auto">
+        <div className="mb-4 max-w-5xl flex flex-col md:flex-row md:items-center gap-y-2 gap-x-4 text-slate-500 mx-auto">
+          <p>
+            <Phone className="inline mr-1 h-4 w-4" /> (96) 98109-5088
+          </p>
+          <p>
+            <Mail className="inline mr-1 h-4 w-4" /> contato@cafeaoquadrado.com
+          </p>
+        </div>
+        <div className="border-t border-slate-300 pt-4 max-w-5xl flex flex-col md:flex-row md:items-center gap-y-2 gap-x-4 text-slate-500 mx-auto">
           <p className="text-sm font-medium">
             Café ao Quadrado Desenvolvimento de Programas ltda. © 2024
           </p>
