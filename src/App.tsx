@@ -159,13 +159,17 @@ function App() {
             <h2 className="text-4xl font-bold mb-4">
               Interessado? Então não perca tempo!
             </h2>
-            <p className="mb-4">
+            <p className="mb-6">
               Entre em contato conosco via whatsapp e vamos marcar uma conversa!
             </p>
-            <button className="px-4 py-2 rounded bg-sky-950 text-slate-50 font-bold text-xl">
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=5596981095088&text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20solu%C3%A7%C3%B5es%20web%20para%20minha%20empresa!"
+              className="px-4 py-2 rounded bg-sky-950 text-slate-50 font-bold text-xl"
+            >
               Iniciar conversa agora
               <ChevronsRight className="ml-2 inline" />
-            </button>
+            </a>
           </div>
         </section>
       </main>
