@@ -7,37 +7,46 @@ import {
   Mail,
   Layers3,
   MonitorCog,
-} from "lucide-react";
+} from 'lucide-react'
 
-import LogoSvg from "./assets/logo.svg";
+import LogoSvg from './assets/logo.svg'
+import { IconsSlide } from './components/IconsSlide'
 
 function App() {
   return (
     <div className="flex flex-col bg-slate-50 min-h-screen w-full h-full">
-      <header className="h-16 z-10 fixed top-0 flex w-full px-4 shadow-2xl bg-slate-950">
+      <header className="h-16 z-20 fixed top-0 flex w-full px-4 shadow-2xl bg-slate-950">
         <nav className="w-full max-w-5xl flex text-slate-500 mx-auto">
           <img src={LogoSvg} alt="Café ao quadrado logo" className="w-20" />
         </nav>
       </header>
       <main className="flex-1">
-        <section className="min-h-screen shadow px-4 bg-gradient-radial radial-x-[50%] radial-y-[-50%] from-sky-800 from-10% via-slate-900 via-80% via-slate-900 to-slate-900 py-44 flex flex-col items-center md:justify-center md:pt-56">
-          <h1 className="text-white text-4xl font-bold text-center">
-            <span className="font-normal">
-              Liberte o potencial do seu negócio:
-            </span>
-            <br />
-            <span className="text-sky-400">Inicie suas ideias conosco!</span>
-          </h1>
-          <p className="text-slate-400 text-center mt-4">
-            Desperte suas ideias com nossa equipe de mestres da programação
-          </p>
-          <a
-            href="#contact"
-            className="group inline-flex items-end mt-10 px-4 py-2 rounded text-slate-50 bg-sky-700 hover:bg-sky-800 transition duration-500"
-          >
-            <span className="font-bold text-lg">Começar agora</span>
-            <ChevronsRight className="w-6 h-6 ml-0 transition-[margin] group-hover:ml-2" />
-          </a>
+        <section className="relative min-h-screen shadow px-4 bg-gradient-radial radial-x-[50%] radial-y-[-50%] from-sky-800 from-10% via-slate-900 via-80% via-slate-900 to-slate-900 py-44 md:py-32 flex flex-col items-center md:justify-center md:pt-56">
+          <div className="hero-background z-0 absolute inset-0 w-full h-full"></div>
+          <div className="z-10 flex flex-col items-center md:justify-center">
+            <h1 className="text-white text-4xl font-bold text-center">
+              <span className="font-normal">
+                Liberte o potencial do seu negócio:
+              </span>
+              <br />
+              <span className="text-sky-400">Inicie suas ideias conosco!</span>
+            </h1>
+
+            <p className="text-slate-400 text-center mt-4">
+              Desperte suas ideias com nossa equipe de mestres da programação
+            </p>
+            <a
+              href="#contact"
+              className="group inline-flex items-end mt-10 px-4 py-2 rounded text-slate-50 bg-sky-700 hover:bg-sky-800 transition duration-500"
+            >
+              <span className="font-bold text-lg">Começar agora</span>
+              <ChevronsRight className="w-6 h-6 ml-0 transition-[margin] group-hover:ml-2" />
+            </a>
+          </div>
+          <div className="mx-auto md:max-w-4xl mt-16 py-4 overflow-hidden w-full h-full flex items-center">
+            <IconsSlide />
+            <IconsSlide />
+          </div>
         </section>
         <section className="px-6 py-24 bg-gradient-to-b from-sky-500 to-sky-900 text-slate-50">
           <div className="w-full max-w-5xl mx-auto">
@@ -195,7 +204,7 @@ function App() {
         </div>
       </footer>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
