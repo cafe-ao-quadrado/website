@@ -70,8 +70,8 @@ function App() {
                     <span className="relative h-4 w-4 rounded-full bg-sky-500"></span>
                   </span>
                 </div>
-                <h3 className="font-bold text-3xl mb-4">
-                  <Calendar className="hidden md:block justify-self-end w-12 h-12 mb-2" />
+                <h3 className="md:flex md:flex-col md:items-end font-bold text-3xl mb-4">
+                  <Calendar className="hidden md:block w-12 h-12 mb-2" />
                   Prazos e estimativas transparentes
                 </h3>
                 <p className="text-lg leading-8 text-sky-50">
