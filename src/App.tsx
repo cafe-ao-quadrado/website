@@ -10,6 +10,8 @@ import {
 } from 'lucide-react'
 
 import LogoSvg from './assets/logo.svg'
+
+import { Dot } from './components/Dot'
 import { IconsSlide } from './components/IconsSlide'
 
 function App() {
@@ -21,7 +23,7 @@ function App() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="relative min-h-screen shadow px-4 bg-gradient-radial radial-x-[50%] radial-y-[-50%] from-sky-800 from-10% via-slate-900 via-80% via-slate-900 to-slate-900 py-44 md:py-32 flex flex-col items-center md:justify-center md:pt-56">
+        <section className="relative min-h-screen shadow px-4 bg-gradient-radial radial-x-[50%] radial-y-[-50%] from-sky-800 from-10% via-slate-900 via-80% via-slate-900 to-slate-900 pt-44 md:pt-32 flex flex-col items-center md:justify-center md:pt-56">
           <div className="hero-background z-0 absolute inset-0 w-full h-full"></div>
           <div className="z-10 flex flex-col items-center md:justify-center">
             <h1 className="text-white text-4xl font-bold text-center">
@@ -43,65 +45,56 @@ function App() {
               <ChevronsRight className="w-6 h-6 ml-0 transition-[margin] group-hover:ml-2" />
             </a>
           </div>
-          <div className="mx-auto md:max-w-4xl mt-16 py-4 overflow-hidden w-full h-full flex items-center">
+          <div className="mx-auto md:max-w-4xl mt-20 py-4 overflow-hidden w-full h-full flex items-center">
             <IconsSlide />
             <IconsSlide />
           </div>
         </section>
-        <section className="px-6 py-24 bg-gradient-to-b from-sky-500 to-sky-900 text-slate-50">
+        <section className="px-6 py-24 bg-sky-600 text-sky-50">
           <div className="w-full max-w-5xl mx-auto">
             <h1 className="text-4xl font-bold text-center mb-20">
               Nossos métodos
             </h1>
             <div className="relative timeline flex flex-col md:grid md:grid-cols-2 md:grid-rows-3 gap-y-8 md:gap-y-16 md:gap-x-24">
-              <div className="relative row-start-1 col-start-2">
+              <div className="relative row-start-1 col-start-2 bg-white px-8 md:px-8 py-8 rounded-lg shadow-lg">
                 <div className="hidden md:block absolute left-[-3rem] top-[0.75rem] -translate-x-1/2">
-                  <span className="relative ml-1 flex items-center justify-center">
-                    <span className="absolute h-8 w-8 rounded-full bg-sky-950"></span>
-                    <span className="relative h-4 w-4 rounded-full bg-sky-500"></span>
-                  </span>
+                  <Dot />
                 </div>
-                <h3 className="font-bold text-3xl mb-4">
+                <h3 className="font-bold text-3xl mb-4 text-sky-800">
                   <Users className="hidden md:block w-12 h-12 mb-2" />
                   Parceria colaborativa
                 </h3>
-                <p className="text-lg leading-8 text-sky-50">
+                <p className="text-lg leading-8 text-sky-900">
                   Gostamos de trabalhar lado a lado com nossos clientes,
                   abraçando suas ideias e inspirações. Valorizamos sua
                   contribuição e o envolvemos ativamente durante todo o processo
                   de desenvolvimento.
                 </p>
               </div>
-              <div className="relative md:text-right row-start-2 col-start-1">
+              <div className="relative row-start-2 col-start-1 bg-white p-8 rounded-lg shadow-lg">
                 <div className="hidden md:block absolute right-[-3rem] top-[0.75rem] translate-x-1/2">
-                  <span className="relative ml-1 flex items-center justify-center">
-                    <span className="absolute h-8 w-8 rounded-full bg-sky-950"></span>
-                    <span className="relative h-4 w-4 rounded-full bg-sky-500"></span>
-                  </span>
+                  <Dot />
                 </div>
-                <h3 className="md:flex md:flex-col md:items-end font-bold text-3xl mb-4">
+                <h3 className="md:flex md:flex-col font-bold text-3xl mb-4 text-sky-800">
                   <Calendar className="hidden md:block w-12 h-12 mb-2" />
                   Prazos e estimativas transparentes
                 </h3>
-                <p className="text-lg leading-8 text-sky-50">
+                <p className="text-lg leading-8 text-sky-900">
                   Você pode confiar em nosso planejamento meticuloso e
                   experiência em gerenciamento de projetos para entregar suas
                   soluções no prazo e dentro do orçamento, sem surpresas no meio
                   do projeto.
                 </p>
               </div>
-              <div className="relative row-start-3 col-start-2">
+              <div className="relative row-start-3 col-start-2 bg-white p-8 rounded-lg shadow-lg">
                 <div className="hidden md:block absolute left-[-3rem] top-[0.75rem] -translate-x-1/2">
-                  <span className="relative ml-1 flex items-center justify-center">
-                    <span className="absolute h-8 w-8 rounded-full bg-sky-950"></span>
-                    <span className="relative h-4 w-4 rounded-full bg-sky-500"></span>
-                  </span>
+                  <Dot />
                 </div>
-                <h3 className="font-bold text-3xl mb-4">
+                <h3 className="font-bold text-3xl mb-4 text-sky-800">
                   <Users className="hidden md:block w-12 h-12 mb-2" />
                   Equipe profissional dedicada
                 </h3>
-                <p className="text-lg leading-8 text-sky-100">
+                <p className="text-lg leading-8 text-sky-900">
                   Nossa software house é o lar de uma equipe de profissionais
                   apaixonados por seu ofício. De desenvolvedores a designers,
                   todos os membros de nossa equipe estão comprometidos em dar
@@ -112,7 +105,7 @@ function App() {
           </div>
         </section>
         <section className="px-6 bg-sky-900 text-slate-50">
-          <div className="border-t border-sky-950 py-24 w-full max-w-5xl mx-auto flex flex-col md:flex-row gap-8">
+          <div className="py-24 w-full max-w-5xl mx-auto flex flex-col md:flex-row gap-8">
             <div className="w-full max-w-80 mb-4 md:mb-0">
               <h2 className="text-4xl font-bold mb-8">
                 Serviços disponíveis para sua empresa
